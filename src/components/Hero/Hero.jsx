@@ -42,7 +42,42 @@ const Hero = () => {
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold">
                 Welcome to the Foodie Zone
               </h1>
-              {/* Image Section */}
+              <p className="text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                totam natus facilis voluptatibus corrupti ex sequi, blanditiis
+                quasi similique voluptas.
+              </p>
+              <div>
+                <button className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-2 rounded-full hover:scale-105 duration-200">
+                  Order Now
+                </button>
+              </div>
+            </div>
+            {/* Image Section */}
+            <div className="order-1 sm:order-2 min-h-[450px] sm:min-h-[450px] flex justify-center items-center relative">
+              {/* Main Image Section */}
+              <div className="flex justify-center items-center h-[300px] sm:h[450px] oerflow-hidden">
+                <img
+                  src={imageId}
+                  alt=""
+                  className="w-[300px] sm:w-[450px] mx-auto spin"
+                />
+              </div>
+              {/* Image List Section */}
+              <div className="flex lg:flex-col lg:top-1/2 lg:-translate-y-1/2 lg:py-2 justify-center gap-4 absolute bottom-[0px] lg:-right-10 bg-white/30 rounded-full">
+                {ImageList.map((item) => (
+                  <img
+                    key={item.id}
+                    src={item.img}
+                    className="max-w-[80px] h-[80px] object-contain inline-block hover:scale-105 duration-200"
+                    onClick={() => {
+                      setImageId(
+                        item.id === 1 ? Food1 : item.id === 2 ? Food2 : Food3
+                      );
+                    }}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>
