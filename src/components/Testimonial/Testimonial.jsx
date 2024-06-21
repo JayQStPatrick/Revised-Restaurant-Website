@@ -20,7 +20,11 @@ const Testimonial = () => {
             </p>
           </div>
           {/* Testimonial Section */}
-          <div className="grid grid-cols-1 max-w-[600px] mx-auto gap-6">
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="300"
+            className="grid grid-cols-1 max-w-[600px] mx-auto gap-6"
+          >
             <Slider {...settings}>
               {testimonialData.map(({ id, name, text, img }) => {
                 return (

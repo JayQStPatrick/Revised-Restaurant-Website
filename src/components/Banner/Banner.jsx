@@ -6,7 +6,7 @@ const Banner = () => {
     <>
       <div className="min-h-[550px]">
         <div>
-          <div className="container">
+          <div data-aos="slide-up" data-aos-once="true" className="container">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {/* Image Section */}
               <div>

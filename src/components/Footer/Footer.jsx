@@ -34,7 +34,54 @@ const Footer = () => {
                 <p>+91 123456789</p>
               </div>
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10"></div>
+            <div className="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10">
+              <div>
+                <div className="py-8 px-4">
+                  <h1 className="text-xl sm:text-3xl font-bold text-justify sm:text-left mb-3">
+                    Important Links
+                  </h1>
+                  <ul className="flex flex-col gap-3">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Login</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10">
+              <div>
+                <div className="py-8 px-4">
+                  <h1 className="text-xl sm:text-3xl font-bold text-justify sm:text-left mb-3">
+                    Important Links
+                  </h1>
+                  <ul className="flex flex-col gap-3">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Login</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10">
+              <div>
+                <div className="py-8 px-4">
+                  <h1 className="text-xl sm:text-3xl font-bold text-justify sm:text-left mb-3">
+                    Important Links
+                  </h1>
+                  <ul className="flex flex-col gap-3">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Login</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="text-center py-10 border-t-2 border-gray-300/50">
+            @copyright 2024 All rights reserved || Made by JayQ
           </div>
         </div>
       </div>
