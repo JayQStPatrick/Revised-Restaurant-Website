@@ -1,18 +1,34 @@
 import React from "react";
-import Food1 from "../../assets/biryani/biryani5.png";
+import BiryaniImg from ".././assets/biryani5.png";
+import Vector from ".././assets/vector3.png";
+import { GrSecure } from "react-icons/gr";
+import { IoFastFood } from "react-cons/io5";
+import { GiFoodTruck } from "react-icons/gi";
 
 const Banner = () => {
+  const bgImage = {
+    backgroundImage: `url(${Vector})`,
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    height: "100%",
+    width: "100%",
+  };
   return (
     <>
       <div className="min-h-[550px]">
-        <div>
-          <div data-aos="slide-up" data-aos-once="true" className="container">
+        <div className="min-h-[550px] flex justify-center items-center backdrop-blur-xl py-12 sm:py-0 ">
+          <div
+            data-aos="slide-up"
+            data-aos-duration="300"
+            className="container"
+          >
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {/* Image Section */}
               <div>
                 <img
-                  src={Food1}
-                  alt=""
+                  src={BiryaniImg}
+                  alt="biryani img"
                   className="max-w-[430px] w-full mx-auto drop-shadow-[-10px_10px_12px_rgba(0,0,0,0.1)]"
                 />
               </div>
@@ -21,8 +37,17 @@ const Banner = () => {
                 <h1 className="text-3xl sm:text-4xl font-bold">
                   Lorem, ipsum dolor.
                 </h1>
-                <p className="text-sm text-gray-500 tracking-wide leading-5"></p>
-                <div>
+                <p className="text-sm text-gray-500 tracking-wide leading-5">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Perferendis reiciendis nostrum omnis autem quos sunt quia
+                  soluta repellendus itaque alias.
+                  <br />
+                  <br />
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Laudantium, esse fuga. Inventore voluptatibus earum
+                  accusantium, ipsa magnam commodi ducimus maxime.
+                </p>
+                <div className="flex gap-6">
                   <div>
                     <GrSecure className="text-4xl h-20 w-20 shadow-sm p-5 rounded-full bg-violet-100 dark:bg-violet-400" />
                   </div>
@@ -34,7 +59,7 @@ const Banner = () => {
                   </div>
                 </div>
                 <div>
-                  <button className="bg-gradient-to-r from-primary to-secondary text-white px-6 py-3 rounded-full hover:scale-105 duration-200">
+                  <button className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-2 rounded-full hover:shadow-md ">
                     Order Now
                   </button>
                 </div>
